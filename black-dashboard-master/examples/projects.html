@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    BDI Dashboard
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="../assets/css/black-dashboard.css" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <link href="https://unpkg.com/intro.js/minified/introjs.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/intro.js/themes/introjs-modern.css"rel="stylesheet">
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
+    -->
+      <div class="sidebar-wrapper">
+        <div class="logo">
+          <a href="javascript:void(0)" class="simple-text logo-mini">
+            R
+          </a>
+          <a href="javascript:void(0)" class="simple-text logo-normal">
+            Richard Wilson
+          </a>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="./dashboard.html">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href="./operations.html">
+              <i class="tim-icons icon-atom"></i>
+              <p>Operations Overview</p>
+            </a>
+          </li>
+          <li  class="active " data-title="Projects & KPI's" data-intro="This Projects & KPI's page is designed to provide an in-depth view of the ongoing projects, their status, and the Key Performance Indicators (KPIs) associated with them.">
+            <a href="./projects.html">
+              <i class="tim-icons icon-pin"></i>
+              <p>Projects & KPI's</p>
+            </a>
+          </li>
+          <li>
+            <a href="./incidents.html">
+              <i class="tim-icons icon-bell-55"></i>
+              <p>Incident Reports</p>
+            </a>
+          </li>
+          <li>
+            <a href="./rosters.html">
+              <i class="tim-icons icon-single-02"></i>
+              <p>Man Power & Rosters</p>
+            </a>
+          </li>
+          <li>
+            <a href="./notice-board.html">
+              <i class="tim-icons icon-puzzle-10"></i>
+              <p>Notice Board & Comms</p>
+            </a>
+          </li>
+          <li>
+            <a href="./more-tools.html">
+              <i class="tim-icons icon-align-center"></i>
+              <p>AI & Tools</p>
+            </a>
+          </li>
+          <li>
+            <a href="./user.html">
+              <i class="tim-icons icon-world"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="search-bar input-group">
+                <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split" ></i>
+                  <span class="d-lg-none d-md-block">Search</span>
+                </button>
+              </li>
+              <li class="dropdown nav-item">
+                <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <div class="notification d-none d-lg-block d-xl-block"></div>
+                  <!-- <i class="tim-icons icon-sound-wave"></i> -->
+                  <i class="tim-icons icon-bell-55"></i>
+                  <p class="d-lg-none">
+                    Notifications
+                  </p>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
+                  <li class="nav-link"><a href="#" class="nav-item dropdown-item">Mike John responded to your email</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">You have 5 more tasks</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Risk Escalated!</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Another notification</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Another  one</a></li>
+                </ul>
+              </li>
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <div class="photo">
+                    <img src="../assets/img/anime3.png" alt="Profile Photo">
+                  </div>
+                  <b class="caret d-none d-lg-block d-xl-block"></b>
+                  <p class="d-lg-none">
+                    Log out
+                  </p>
+                </a>
+                <ul class="dropdown-menu dropdown-navbar">
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Profile</a></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Settings</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Log out</a></li>
+                </ul>
+              </li>
+              <li class="separator d-lg-none"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+      <div class="content">
+
+        <!-- Quick Stats -->
+        <div class="row justify-content-center" data-title="Quick View of Key Info" data-intro="Here you can see the number of upcoming audits, Employees in training, Upcoming stakeholder meetings, and the Average Employee Performance">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title custom-heading">Upcoming Audits</h5>
+                        <p class="card-text"><i class="tim-icons icon-alert-circle-exc text-warning"></i> 5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title custom-heading">Employees in Training</h5>
+                        <p class="card-text"><i class="tim-icons icon-single-02 text-info"></i> 12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title custom-heading">Stakeholder Meetings</h5>
+                        <p class="card-text"><i class="tim-icons icon-notes text-primary"></i> 3 this week</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title custom-heading">Avg. Employee Performance</h5>
+                        <p class="card-text"><i class="tim-icons icon-chart-pie-36 text-success"></i> 87%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Main KPIs and Active Projects -->
+        <div class="row justify-content-center mt-4">
+            <!-- Main KPI (Central Doughnut Chart with surrounding gauges) -->
+            <div class="col-lg-6 text-center">
+                <div class="card" data-title="Key Performance Indicators" data-intro="This shows the number of KPI's that have been met vs not met, important to know where the company stands in terms of performance.">
+                    <div class="card-body">
+                        <h5 class="card-category custom-heading">Key Performance Indicators</h5>
+                        <div class="chart-area d-inline-block">
+                            <canvas id="mainKpiChart"></canvas>
+                        </div>
+                        <!-- Surrounding smaller gauges for related KPIs can be added here -->
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Active Projects (Bar Chart) -->
+            <div class="col-lg-6 text-center">
+                <div class="card" data-title="Active Projects" data-intro="This shows the total number of Active Projects as well as their completion, based on Company Task Data.">
+                    <div class="card-body">
+                        <h5 class="card-category custom-heading">Active Projects</h5>
+                        <div class="chart-area">
+                            <canvas id="activeProjectsBarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Additional Details with Tabs -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card" >
+                    <div class="card-header">
+                        <ul class="nav nav-tabs" id="detailsTab" role="tablist">
+                            <li class="nav-item" data-title="Inspections and Audits" data-intro="Here you can see more information about the inspections and audits">
+                                <a class="nav-link active" id="inspections-tab" data-toggle="tab" href="#inspections" role="tab">Inspections & Audits</a>
+                            </li>
+                            <li class="nav-item" data-title="Trainings" data-intro="Here is information about current training programs and the number of employees involved.">
+                                <a class="nav-link" id="trainings-tab" data-toggle="tab" href="#trainings" role="tab">Employee Trainings</a>
+                            </li>
+                            <li class="nav-item" data-title="Stakeholder Meetings" data-intro="More information about stakeholder meetings">
+                                <a class="nav-link" id="meetings-tab" data-toggle="tab" href="#meetings" role="tab">Stakeholder Meetings</a>
+                            </li>
+                            <li class="nav-item" data-title="Employee Performance" data-intro="This shows info about Employees and their performance, calculated from Client Reports and Project Completions">
+                                <a class="nav-link" id="performance-tab" data-toggle="tab" href="#performance" role="tab">Employee Performance</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="inspections">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6>Upcoming Inspections</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Location</th>
+                                                        <th>Inspector</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Example row -->
+                                                    <tr>
+                                                        <td>01/01/2024</td>
+                                                        <td>Main Office</td>
+                                                        <td>John Doe</td>
+                                                    </tr>
+                                                    <!-- Add more rows as needed -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6>Recent Audit Results</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>No critical issues found in the last audit</p>
+                                            <!-- Consider adding a progress bar, chart, or list of issues here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="tab-pane fade" id="trainings">
+    <div class="row">
+        <!-- Current Training Programs -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h6>Current Training Programs</h6>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Program Name</th>
+                                <th>Participants</th>
+                                <th>Completion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Example row -->
+                            <tr>
+                                <td>Advanced Security Training</td>
+                                <td>12 employees</td>
+                                <td><div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-pane fade" id="meetings">
+  <div class="row">
+      <!-- Upcoming Meetings -->
+      <div class="col-md-6">
+          <div class="card">
+              <div class="card-header">
+                  <h6>Upcoming Meetings</h6>
+              </div>
+              <div class="card-body">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th>Date</th>
+                              <th>Topic</th>
+                              <th>Stakeholder</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <!-- Example row -->
+                          <tr>
+                              <td>05/01/2024</td>
+                              <td>Project Update</td>
+                              <td>Mr. Smith</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="performance">
+  <div class="row">
+      <!-- Average Employee Performance -->
+      <div class="col-md-6">
+          <div class="card">
+              <div class="card-header">
+                  <h6>Average Employee Performance</h6>
+              </div>
+              <div class="card-body">
+                  <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">87%</div>
+                  </div>
+
+                  <!-- Table showcasing individual employee performances -->
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th>Employee</th>
+                              <th>Performance</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>John Doe</td>
+                              <td>
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                  </div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Jane Smith</td>
+                              <td>
+                                  <div class="progress">
+                                      <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                  </div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Emily Johnson</td>
+                              <td>
+                                  <div class="progress">
+                                      <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                  </div>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+    <div class="fixed-plugin">
+      <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="dropdown">
+          <i class="fa fa-cog fa-2x"> </i>
+        </a>
+        <ul class="dropdown-menu">
+          <li class="header-title"> Sidebar Background</li>
+          <li class="adjustments-line">
+            <a href="javascript:void(0)" class="switch-trigger background-color">
+              <div class="badge-colors text-center">
+                <span class="badge filter badge-primary active" data-color="primary"></span>
+                <span class="badge filter badge-info" data-color="blue"></span>
+                <span class="badge filter badge-success" data-color="green"></span>
+              </div>
+              <div class="clearfix"></div>
+            </a>
+          </li>
+          <li class="adjustments-line text-center color-change">
+            <span class="color-label">LIGHT MODE</span>
+            <span class="badge light-badge mr-2"></span>
+            <span class="badge dark-badge ml-2"></span>
+            <span class="color-label">DARK MODE</span>
+          </li>
+          <li class="nav-item text-center">
+            <a href="#" class="btn btn-primary mx-auto" data-toggle="modal" data-target="#contextModal" style="color: black;"> View Context</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  <!-- Context Modal -->
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="contextModal" tabindex="-1" role="dialog" aria-labelledby="contextModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Projects & KPI's Context</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <!-- Add your context here -->
+                  <p>This "Projects & KPI's" page is designed to provide an in-depth view of the ongoing projects, their status, and the Key Performance Indicators (KPIs) associated with them. The main sections include:</p>
+                  <ul>
+                      <li><strong>Overall Project Completion:</strong> A visual representation of the cumulative progress across all projects, enabling easy tracking of overall completion status.</li>
+                      <li><strong>Active Projects:</strong> Details of individual projects, including their names and current completion percentages, to offer a granular view of each project's progress.</li>
+                      <li><strong>Additional Details with Tabs:</strong> This section delves into specific areas of interest such as Inspections & Audits, Employee Trainings, Stakeholder Meetings, and Employee Performance. Each tab provides relevant data and information tailored to that specific area.</li>
+                  </ul>
+                  <p>Together, these sections give managers and executives a practical glimpse into the status and health of their projects and associated KPIs. The design aims to present information in a concise, easy-to-understand manner, ensuring that key decisions can be made effectively and efficiently.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!--   Core JS Files   -->
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+  <script>
+    introJs().start();
+    introJs().addHints();
+  </script>
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Google Maps Plugin    -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
+    <script src="../assets/demo/demo.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var ctxMainKpi = document.getElementById("mainKpiChart").getContext("2d");
+    var gradientStrokeMainKpi = ctxMainKpi.createLinearGradient(0, 230, 0, 50);
+    
+    gradientStrokeMainKpi.addColorStop(1, 'rgba(72,72,176,0.2)');
+    gradientStrokeMainKpi.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStrokeMainKpi.addColorStop(0, 'rgba(119,52,169,0)'); 
+    
+    var mainKpiChart = new Chart(ctxMainKpi, {
+        type: 'doughnut',
+        responsive: true,
+        legend: {
+            display: false
+        },
+        data: {
+            labels: ['Completed', 'Remaining'],
+            datasets: [{
+                label: "Percentage",
+                fill: true,
+                backgroundColor: [gradientStrokeMainKpi, "#ffffff"],
+                hoverBackgroundColor: ["#665c9f", "#ffffff"],
+                borderWidth: 2,
+                borderColor: ["#665c9f", "#ffffff"],
+                data: [75, 25],  // Example data: 75% completed, 25% remaining
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            cutoutPercentage: 80
+        }
+    });
+
+    // Active Projects Chart
+    var ctxActiveProjects = document.getElementById("activeProjectsBarChart").getContext("2d");
+
+var activeProjectsBarChart = new Chart(ctxActiveProjects, {
+    type: 'bar',
+    responsive: true,
+    legend: {
+        display: false
+    },
+    data: {
+        labels: ['Project A', 'Project B', 'Project C'],  // Example project names
+        datasets: [{
+            label: "Completion",
+            fill: true,
+            backgroundColor: '#3A84FF',
+            hoverBackgroundColor: '#3A84FF',
+            data: [50, 80, 65],  // Example data: Project A is 50% complete, Project B is 80% complete, etc.
+            borderWidth: 1
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    max: 100  // Assuming the progress is in percentage
+                }
+            }]
+        }
+    }
+});
+});
+      $(document).ready(function() {
+        $().ready(function() {
+          $sidebar = $('.sidebar');
+          $navbar = $('.navbar');
+          $main_panel = $('.main-panel');
+  
+          $full_page = $('.full-page');
+  
+          $sidebar_responsive = $('body > .navbar-collapse');
+          sidebar_mini_active = true;
+          white_color = false;
+  
+          window_width = $(window).width();
+  
+          fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+  
+  
+  
+          $('.fixed-plugin a').click(function(event) {
+            if ($(this).hasClass('switch-trigger')) {
+              if (event.stopPropagation) {
+                event.stopPropagation();
+              } else if (window.event) {
+                window.event.cancelBubble = true;
+              }
+            }
+          });
+  
+          $('.fixed-plugin .background-color span').click(function() {
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+  
+            var new_color = $(this).data('color');
+  
+            if ($sidebar.length != 0) {
+              $sidebar.attr('data', new_color);
+            }
+  
+            if ($main_panel.length != 0) {
+              $main_panel.attr('data', new_color);
+            }
+  
+            if ($full_page.length != 0) {
+              $full_page.attr('filter-color', new_color);
+            }
+  
+            if ($sidebar_responsive.length != 0) {
+              $sidebar_responsive.attr('data', new_color);
+            }
+          });
+  
+          $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function() {
+            var $btn = $(this);
+  
+            if (sidebar_mini_active == true) {
+              $('body').removeClass('sidebar-mini');
+              sidebar_mini_active = false;
+              blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
+            } else {
+              $('body').addClass('sidebar-mini');
+              sidebar_mini_active = true;
+              blackDashboard.showSidebarMessage('Sidebar mini activated...');
+            }
+  
+            // we simulate the window Resize so the charts will get updated in realtime.
+            var simulateWindowResize = setInterval(function() {
+              window.dispatchEvent(new Event('resize'));
+            }, 180);
+  
+            // we stop the simulation of Window Resize after the animations are completed
+            setTimeout(function() {
+              clearInterval(simulateWindowResize);
+            }, 1000);
+          });
+  
+          $('.switch-change-color input').on("switchChange.bootstrapSwitch", function() {
+            var $btn = $(this);
+  
+            if (white_color == true) {
+  
+              $('body').addClass('change-background');
+              setTimeout(function() {
+                $('body').removeClass('change-background');
+                $('body').removeClass('white-content');
+              }, 900);
+              white_color = false;
+            } else {
+  
+              $('body').addClass('change-background');
+              setTimeout(function() {
+                $('body').removeClass('change-background');
+                $('body').addClass('white-content');
+              }, 900);
+  
+              white_color = true;
+            }
+  
+  
+          });
+  
+          $('.light-badge').click(function() {
+            $('body').addClass('white-content');
+          });
+  
+          $('.dark-badge').click(function() {
+            $('body').removeClass('white-content');
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+  
+      });
+    </script>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+      window.TrackJS &&
+        TrackJS.install({
+          token: "ee6fab19c5a04ac1a32a645abde4613a",
+          application: "black-dashboard-free"
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,671 @@
+.tim-row {
+  margin-bottom: 20px;
+}
+
+.tim-white-buttons {
+  background-color: #777777;
+}
+
+.typography-line {
+  padding-left: 25%;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.typography-line span {
+  bottom: 10px;
+  color: #c0c1c2;
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  left: 0;
+  position: absolute;
+  width: 260px;
+  text-transform: none;
+}
+
+.tim-row {
+  padding-top: 60px;
+}
+
+.tim-row h3 {
+  margin-top: 0;
+}
+
+.offline-doc .page-header {
+  display: flex;
+  align-items: center;
+}
+
+.offline-doc .footer {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  bottom: 0;
+  color: #fff;
+  z-index: 1;
+}
+
+@media all and (min-width: 992px) {
+  .sidebar .nav>li.active-pro {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+  }
+}
+
+.card.card-upgrade .card-category {
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+.my-icon {
+  color: red !important;
+}
+
+.scrollable-box {
+  height: 200px; /* Adjust as needed */
+  overflow-y: scroll;
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #FFF;
+  border-radius: 1rem;
+}
+
+.map-section {
+  width: 100%;
+  height: 100%;
+  overflow: scroll; /* Add this to clip the image to the container size */
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Add this to maintain aspect ratio while covering container */
+  display: block; /* Add this to remove any default margins */
+}
+
+.table-responsive::-webkit-scrollbar {
+  display: none;
+}
+
+.table-responsive {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#contextModal .modal-content {
+  background-color: #525f7f;
+  color: #000000;
+}
+
+.custom-heading {
+  font-size: 1rem;
+}
+
+/* Operations Overview specific styles */
+.operations-overview .card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.operations-overview .card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+.operations-overview .card-header {
+  font-weight: bold;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Personnel card specific styling */
+.personnel-card .personnel-count {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Vehicle card specific styling */
+.vehicle-card .vehicle-location,
+.vehicle-card .vehicle-status {
+  font-size: 18px;
+}
+
+/* Asset card specific styling */
+.asset-card .asset-count {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745; /* green */
+}
+
+.asset-card .asset-shortage {
+  font-size: 18px;
+  color: #dc3545; /* red */
+}
+
+/* Site card specific styling */
+.site-card .site-status {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Mission card specific styling */
+.mission-card .ongoing-mission,
+.mission-card .mission-progress {
+  font-size: 20px;
+}
+
+.operations-overview .activity-card {
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto;  /* Enable scrolling for long lists */
+}
+
+.operations-overview .activity-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.operations-overview .activity-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.operations-overview .activity-item:last-child {
+  border-bottom: none;
+}
+
+.operations-overview .activity-time {
+  color: #6c757d; /* Bootstrap's secondary color */
+  font-size: 14px;
+}
+
+.operations-overview .activity-item.alert .activity-text {
+  color: #dc3545; /* Bootstrap's danger color */
+}
+
+.operations-overview .activity-item.warning .activity-text {
+  color: #ffc107; /* Bootstrap's warning color */
+}
+
+.operations-overview .activity-item.update .activity-text {
+  color: #007bff; /* Bootstrap's primary color */
+}
+
+.operations-overview .progress {
+  height: 30px;  /* Adjust this value as needed */
+  margin-top: 15px;
+  border-radius: 5px;  /* Optional: to give rounded corners */
+}
+
+.operations-overview .progress-bar {
+  line-height: 30px;  /* Ensure text in the progress bar is vertically centered */
+}
+
+.mini-card {
+  border: 1px solid #444;      /* Dark border */
+  padding: 15px;               /* Inner spacing */
+  margin-bottom: 15px;         /* Space between cards */
+  background-color: #263148;  /* Dark blue background color */
+  border-radius: 5px;          /* Rounded corners */
+  transition: all 0.3s;        /* Smooth transition for hover effects */
+  color: #dcdcdc;              /* Light text color for contrast */
+}
+
+.mini-card:hover {
+  border-color: #555;          /* Slightly lighter border on hover */
+  background-color: #334169;  /* Slightly lighter blue on hover */
+}
+
+.mini-card .report-title {
+  font-weight: bold;           /* Bold title for emphasis */
+  margin-bottom: 8px;          /* Space between title and description */
+}
+
+.mini-card .report-description {
+  margin-bottom: 10px;         /* Space between description and the button/link */
+}
+
+.mini-card .btn-link {
+  background-color: transparent; /* Transparent background */
+  padding: 5px 15px;          /* Padding for the button */
+  border-radius: 5px;         /* Rounded corners for the button */
+  color: #dcdcdc;             /* Light text color for the button */
+  border: 1px solid #dcdcdc;  /* Button border */
+  transition: all 0.2s;       /* Smooth transition for button hover */
+  text-decoration: none;     /* Remove underline */
+}
+
+.mini-card .btn-link:hover {
+  background-color: #445577;  /* Button background on hover */
+  color: #263148;             /* Text color on hover */
+  border-color: #445577;      /* Button border color on hover */
+}
+
+/* Increase the size of the Real-time Security Reports header */
+.realtime-header {
+  font-size: 1.5em;   /* Adjust as needed */
+  font-weight: bold;  /* Bold for emphasis */
+}
+
+/* Increase the size of the AI Report Maker header */
+.ai-maker-header {
+  font-size: 1.5em;   /* Adjust as needed */
+  font-weight: bold;  /* Bold for emphasis */
+}
+
+.ai-summarizer-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Styling for rosters.html */
+/* General styling for all team cards */
+.team-card, .total-cpos-card {
+  border: 1px solid #444;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #263148;
+  border-radius: 5px;
+  transition: all 0.3s;
+  color: #dcdcdc;
+}
+
+.team-card:hover, .total-cpos-card:hover {
+  border-color: #555;
+  background-color: #334169;
+}
+
+/* Styling for card headers */
+.team-card .card-header, .total-cpos-card .card-header {
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: #1f2a3a; /* Darker shade for header */
+  border-bottom: 1px solid #444;
+}
+
+/* Progress bars styling */
+.team-progress, .total-progress {
+  background-color: #1f2a3a;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 25px; /* Increased height for better visibility */
+}
+
+.team-progress-bar, .total-progress-bar {
+  background-color: #445577;
+  border-radius: 5px;
+  color: #000;
+  font-size: 0.76rem;
+}
+
+/* Textual information styling */
+.team-active-cpos, .team-total-cpos, .total-active-cpos, .total-all-cpos {
+  font-size: 1rem;
+}
+
+/* Styling specific to the total manpower card */
+.total-cpos-card {
+  border: 2px solid #555;
+}
+
+.total-header {
+  font-size: 1.5em;
+}
+
+/* Alternate colors for each team's progress bar */
+.ops-team .team-progress-bar {
+  background-color: #4A90E2; /* Blue */
+}
+
+.hom-team .team-progress-bar {
+  background-color: #50E3C2; /* Green */
+}
+
+.mog-team .team-progress-bar {
+  background-color: #F5A623; /* Orange */
+}
+
+.garaway-team .team-progress-bar {
+  background-color: #7ED321; /* Lime */
+}
+
+.total-progress-bar {
+  background-color: #B8E986; /* Light green */
+}
+
+/* Rosters Overview */
+.rosters-overview {
+  border-bottom: 1px solid #444; /* Dark border for separation */
+  padding-bottom: 20px; /* Padding to give some space above the border */
+}
+
+.rosters-header {
+  font-size: 1.6em; /* Larger font size for emphasis */
+  color: #dcdcdc; /* Light text color for contrast */
+  margin-bottom: 10px; /* Space between header and description */
+}
+
+.rosters-description {
+  color: #aaa; /* Slightly dimmed text color for description */
+}
+
+/* Current Rosters */
+.current-roster-card {
+  border: 1px solid #444;
+  background-color: #263148;
+  transition: all 0.3s;
+  color: #dcdcdc;
+}
+
+.current-roster-card:hover {
+  border-color: #555;
+  background-color: #334169;
+}
+
+.roster-name {
+  font-weight: bold; /* Bold text for roster name */
+  margin-bottom: 8px; /* Space between name and date range */
+}
+
+.roster-date-range, .roster-cpos-count {
+  margin-bottom: 10px; /* Consistent space between card elements */
+}
+
+.roster-view-btn {
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.roster-view-btn:hover {
+  background-color: #445577;
+  color: #263148;
+  border-color: #445577;
+}
+
+/* Generate AI Rosters */
+.ai-roster-section {
+  border-top: 1px solid #444; /* Dark border for separation */
+  padding-top: 20px; /* Padding to give some space below the border */
+}
+
+.ai-roster-description {
+  color: #aaa; /* Slightly dimmed text color for description */
+  margin-bottom: 15px; /* Space between description and button */
+}
+
+.ai-roster-btn {
+  background-color: #50E3C2; /* Distinct green color for emphasis */
+  color: #263148; /* Dark text color for contrast */
+  border: none; /* Removing default border */
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.2s;
+}
+
+.ai-roster-btn:hover {
+  background-color: #3BC2A6; /* Slightly darker green on hover */
+}
+
+
+
+/* Message Board - Black Theme */
+
+/* General Styling */
+.notice-board-content {
+  background-color: #1a1a1a; /* Dark background */
+  color: #dcdcdc; /* Light text color */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.section-header {
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Messaging System */
+.messaging-system {
+  background-color: #263148; /* Slightly different dark shade for distinction */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.messaging-system select, .messaging-system textarea, .messaging-system button {
+  margin-top: 10px;
+}
+
+/* Static Messaging System */
+.static-message-card {
+  border: 1px solid #444;
+  background-color: #263148;
+  transition: all 0.3s;
+  color: #dcdcdc;
+}
+
+.static-message-card:hover {
+  border-color: #555;
+  background-color: #334169;
+}
+
+/* Notice Board */
+.notice-row .card {
+  border: 1px solid #444;
+  background-color: #263148;
+  color: #dcdcdc;
+  margin-bottom: 15px; /* Space between cards */
+  transition: all 0.3s;
+}
+
+.notice-row .card:hover {
+  border-color: #555;
+  background-color: #334169;
+}
+
+.notice-row .btn-info {
+  background-color: transparent;
+  border: 1px solid #dcdcdc;
+  color: #dcdcdc;
+  transition: all 0.2s;
+}
+
+.notice-row .btn-info:hover {
+  background-color: #445577;
+  color: #263148;
+  border-color: #445577;
+}
+
+/* Override default focus styling for message-content textarea */
+#message-content:focus {
+  outline: none; /* Remove default outline */
+  border: 1px solid #ff6699; /* Add a pink border */
+  box-shadow: 0 0 5px #ff6699; /* Optional: Add a subtle glow for better visual feedback */
+}
+
+/* Static Message System Enhancements */
+
+/* Icon Styling */
+.fas {
+  margin-right: 10px; /* Some space between the icon and the text */
+  color: #50E3C2; /* Sample color; can be changed */
+}
+
+/* Tag Styling */
+.tag {
+  display: inline-block;
+  background-color: #263148; /* Dark background */
+  padding: 2px 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: #dcdcdc; /* Light text color */
+}
+
+.tag.urgent {
+  background-color: #ff4c4c; /* Red for urgent */
+  color: #1a1a1a; /* Dark text for contrast */
+}
+
+/* Notice Board Enhancements */
+
+/* Priority Tag Styling */
+.priority {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 10px; /* Space from the date */
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.priority.low {
+  background-color: #50E3C2; /* Green for low priority */
+  color: #1a1a1a; /* Dark text for contrast */
+}
+
+.priority.medium {
+  background-color: #f0db4f; /* Yellow for medium priority */
+  color: #1a1a1a; /* Dark text for contrast */
+}
+
+.priority.high {
+  background-color: #ff4c4c; /* Red for high priority */
+  color: #1a1a1a; /* Dark text for contrast */
+}
+
+/* Attachments Styling */
+.attachments {
+  margin-top: 10px; /* Space from the main content */
+  font-size: 0.9em; /* Slightly smaller than the main content */
+  color: #aaa; /* Dimmed color */
+}
+
+.attachments .fas {
+  margin-right: 5px; /* Space between the icon and the text */
+  color: #dcdcdc; /* Lighter color for the icon */
+}
+
+.ai-tools-overview .ai-tool-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ai-tools-overview .ai-tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ai-tools-overview .card-header {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.ai-tools-overview .card-header i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+
+.ai-tools-overview .card-body p {
+  color: #aaa;
+}
+
+.ai-tools-overview .tool-status {
+  display: inline-block;
+  padding: 3px 8px;         /* Reduced padding for a smaller label */
+  border-radius: 12px;     /* Adjusted border-radius */
+  font-weight: bold;
+  font-size: 0.5rem;       /* Reduced font-size */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ai-tools-overview .available {
+  background-color: #4CAF50;  /* Green */
+  color: white;
+}
+
+.ai-tools-overview .coming-soon {
+  background-color: #9E9E9E;  /* Gray */
+  color: white;
+}
+
+/* Search bar container */
+.ai-tools-overview .search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style for the search input */
+.ai-tools-overview .search-input {
+  width: 70%;          
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #0d0b0b;
+  background-color: #181616;  /* Dark background color for search input */
+  color: #aaa;                /* Lighter text color for readability */
+  outline: none;
+  transition: border 0.3s;
+}
+
+.ai-tools-overview .search-input::placeholder {
+  color: #666;  /* Placeholder text color */
+}
+
+.ai-tools-overview .search-input:focus {
+  border: 1px solid #2185f7;  /* Highlight border on focus */
+}
+
+/* Style for the search button */
+.ai-tools-overview .search-btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #222;   /* Dark background for button */
+  color: #ddd;              /* Lighter text color for contrast */
+  transition: background-color 0.3s;
+}
+
+.ai-tools-overview .search-btn:hover {
+  background-color: #333;  /* Slightly lighter background on hover */
+}
+
+.custom-missions-card {
+  background-color: #333;   /* Dark background */
+  border-color: #555;       /* Slightly lighter gray for border */
+  color: #ddd;              /* Light gray text */
+}
+
+.custom-missions-card .list-group-item {
+  background-color: #333;   /* Dark background for list items */
+  border-color: #555;       /* Slightly lighter gray for list item borders */
+  color: #ddd;              /* Light gray text for list items */
+}
+
+
+
+/* Hover effects for the missions */
+.custom-missions-card .list-group-item:hover {
+    background-color: #444; /* Slightly lighter than the default dark background on hover */
+    cursor: pointer; /* Indicates an interactive element */
+}

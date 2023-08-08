@@ -1,0 +1,83 @@
+<div class="content notice-board-content">
+  <!-- Messaging System -->
+  <div class="messaging-system mb-4">
+      <h3 class="section-header text-center">Messaging System</h3>
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+            <label for="recipient">Send To:</label>
+            <select id="recipient" class="form-control">
+                <option>All Employees</option>
+                <!-- Additional options for departments or individuals -->
+                <option>SBE</option>
+                <option>EUCAP VIP</option>
+                <option>Reni JvanR</option>
+            </select>
+            <label for="message-content">Message:</label>
+            <textarea id="message-content" class="form-control" rows="4"></textarea>
+            <button class="btn btn-primary mt-2">Send Message</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- Static Messaging System -->
+  <div class="static-message mb-4">
+    <div class="card text-center static-message-card">
+      <div class="card-header">
+          Message from the Boss - [Date/Time]
+      </div>
+      <div class="card-body">
+          [Static Message Content]
+      </div>
+      <div class="card-footer">
+          <button class="btn btn-primary">Endorse</button>
+          <button class="btn btn-secondary">Provide Feedback</button>
+      </div>
+  </div>
+  </div>
+
+  <!-- Notice Board -->
+  <div class="notice-board">
+      <h3 class="section-header text-center">Notice Board</h3>
+      <div class="row notice-row">
+        <div class="col-md-4">
+          <div class="card">
+              <div class="card-header">
+                  [Notice Date/Time]
+              </div>
+              <div class="card-body">
+                  [Notice Content]
+              </div>
+              <div class="card-footer">
+                  <button class="btn btn-sm btn-info">Summarize</button>
+              </div>
+          </div>
+      </div>
+      <!-- Additional notice cards can follow in a similar structure -->
+      <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                [Notice Date/Time]
+            </div>
+            <div class="card-body">
+                [Notice Content]
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-sm btn-info">Summarize</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+          <div class="card-header">
+              [Notice Date/Time]
+          </div>
+          <div class="card-body">
+              [Notice Content]
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-sm btn-info">Summarize</button>
+          </div>
+      </div>
+      </div>
+  </div>
+</div>
